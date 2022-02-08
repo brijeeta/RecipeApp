@@ -2,10 +2,14 @@
 @import 'font.css';
 @import 'recipe-list.css';
 @import 'buttons.css';
+@import 'recipe.css';
+@import 'ingredient-list.css';
+@import 'recipe-edit.css';
 *,
 *::before,
 *::after {
-    font-family: 'Gotham Rounded', sans-serif
+    font-family: 'Gotham Rounded', sans-serif;
+    box-sizing: border-box;
 }
 
 html {
@@ -15,4 +19,8 @@ html {
 body {
     margin: 0;
     padding: 0
+}
+
+.mr-1 {
+    margin-right: 5px;
 }
