@@ -41,22 +41,24 @@ function App() {
   function handleRecipeAdd() {
     const newRecipe = {
       id: uuidv4(),
-      name: 'New',
+      name: '',
       servings: 1,
-      cookTime: '1:00',
-      instructions: 'Intr.',
+      cookTime: '',
+      instructions: '',
       ingredients: [
         {
           id: uuidv4(),
-          name: 'Name',
-          amount: '4 tbs',
+          name: '',
+          amount: '',
         },
       ],
     }
+    SetSelectedRecipeId(newRecipe.id)
     setRecipes([...recipes, newRecipe])
     console.log(recipes)
   }
   
+
 function handleRecipeChange(id,recipe){
   const newRecipes =[...recipes]
   const index = newRecipes.findIndex(r=>r.id === id)
